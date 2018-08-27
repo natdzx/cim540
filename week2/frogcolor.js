@@ -6,14 +6,15 @@ function setup() {
 
 function draw() {
   //head
-  fill(255, 71, 135);
+  fill(8, 170, 0);
   ellipse (150,100,150,70);
   //mouth
   fill(255, 71, 135);
   ellipse (150,110,70,15);
   //left eye
-  fill(255, 71, 135);
+  fill(71, 153, 255);
   ellipse (110,65,20,20);
   //right eye
+  fill(71, 153, 255);
   ellipse (185,65,20,20);
 }
