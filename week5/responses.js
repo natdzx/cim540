@@ -12,7 +12,7 @@ function draw(){
     }
     rect(90,30,60,60);
 
-    if(mouseX>330 && mouseX<420 && mouseY>30 && mouseY<90){
+    if(mouseX>330 && mouseX<390 && mouseY>30 && mouseY<90){
       fill(0,255,0);
     }else {
       fill(255);
