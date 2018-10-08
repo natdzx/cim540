@@ -12,6 +12,7 @@ function draw() {
   strokeWeight(5);
   translate(300,100);
   rotate(angle);
-  angle += 1/8;
+  angle += 1/12;
   line(0,0,200,200);
+  pop();
 }
