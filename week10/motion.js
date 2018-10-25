@@ -14,7 +14,7 @@ function draw(){
   background(0, 36, 51);
   stroke(255);
   currentTime = millis();
-  if(currentTime < 6000){
+  if(currentTime < 5000){
     y += speed;
     line(x,y,x,y+20);
     line(x+50,y+30,x+50,y+20+30);
@@ -28,12 +28,12 @@ function draw(){
   }else{
     t += speedsun;
     background(142, 185, 255,t);
-    if (currentTime > 6000 && currentTime < 7000){
+    if (currentTime > 5000 && currentTime < 6000){
       g += grow
       noStroke();
       fill(255,255,0,);
       ellipse(250,height/3,g,g);
-    } else if (currentTime > 7000){
+    } else if (currentTime > 6000){
       noStroke();
       fill(255,255,0,);
       ellipse(250,height/3,60,60);
