@@ -27,7 +27,7 @@ function draw(){
     }
   }else{
     t += speedsun;
-    background(153, 225, 255,t);
+    background(142, 185, 255,t);
     if (currentTime > 6000 && currentTime < 7000){
       g += grow
       noStroke();
