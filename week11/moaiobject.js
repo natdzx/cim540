@@ -4,8 +4,6 @@ function preload(){
   mountains = loadImage('mountains.jpg');
 }
 
-
-
 function moai(initX, initY, size){
   this.x = initX;
   this.y = initY;
@@ -20,8 +18,6 @@ function moai(initX, initY, size){
     ellipse(this.x+60+40,this.y+80,this.size-80-70-20,this.size-40-200);
     rect(this.x+30,this.y+100+30,this.size-80-70,this.size-180);
   }
-
-
 }
 
 function setup(){
