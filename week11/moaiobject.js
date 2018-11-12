@@ -12,22 +12,27 @@ function moai(initX, initY, size){
   this.moai = function(){
     noStroke();
     fill(252, 153, 201)
-    rect(this.x,this.y,this.size-80,this.size-40);
+    beginShape();
+    vertex(this.x,this.y);
+    vertex(this.x+this.size/2,this.y);
+    vertex(this.x+this.size/2,this.y+this.size);
+    vertex(this.x,this.y+this.size);
+    endShape();
     fill(211, 57, 118)
-    ellipse(this.x+40,this.y+40,this.size-80-70,this.size-40-220);
-    ellipse(this.x+60+40,this.y+80,this.size-80-70-20,this.size-40-200);
-    rect(this.x+30,this.y+100+30,this.size-80-70,this.size-180);
+    ellipse(this.x+this.size/6,this.y+this.size/5,this.size/6,this.size/4 );
+    ellipse(this.x+this.size/3, this.y+this.size*2/5, this.size/8, this.size/10);
+    rect(this.x+this.size/6, this.y+this.size*3/4,this.size/4,this.size/10);
   }
 }
 
 function setup(){
   createCanvas(800,1600);
   image(mountains, 50,50,500,800);
-  moai1 = new moai(350,600,200);
-  moai2 = new moai(100,550,200);
-  moai3 = new moai(80,300,200);
-  moai4 = new moai(250,280,200);
-  moai5 = new moai(390,400,200);
+  moai1 = new moai(120,620,200);
+  moai2 = new moai(240,620,160);
+  moai3 = new moai(340,560,120);
+  moai4 = new moai(120,380,100);
+  moai5 = new moai(200,380,80);
 }
 
 var moai1;
